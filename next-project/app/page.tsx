@@ -1,11 +1,14 @@
-import Link from "next/link";
 import Image from "next/image"; // <--- Import this
+import Counter from "./components/Counter";
 
 export default function Home() {
   return (
     <div style={{ padding: "40px", fontFamily: "sans-serif" }}>
       <h1>Hello, Next.js! 🚀</h1>
       <p>I am learning to become a Full-Stack Developer.</p>
+
+      {/* Client Component */}
+      <Counter />
 
       {/* Optimized Image */}
       <div style={{ marginTop: "20px" }}>

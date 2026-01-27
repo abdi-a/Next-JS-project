@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// @ts-expect-error Type declaration for CSS modules not found
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Lobster } from "next/font/google";

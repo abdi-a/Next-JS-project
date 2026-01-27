@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* select the next line to ignore the unknown at-rule warning */
+/* @theme is a valid directive in Tailwind CSS v4 */
 :root {
   --background: #ffffff;
   --foreground: #171717;
