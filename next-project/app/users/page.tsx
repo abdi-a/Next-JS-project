@@ -1,4 +1,3 @@
-// app/users/page.tsx
 interface User {
   id: number;
   name: string;
@@ -6,6 +5,9 @@ interface User {
 }
 
 export default async function UsersPage() {
+  // Artificial delay to show loading state
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
   // 1. Fetch data directly in the component
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const users: User[] = await res.json();
